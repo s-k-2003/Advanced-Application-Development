@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tests{
+    max-width: var(--max-width);
+    background: var(--light-warning);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .sec-title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+.tests-container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.tests-item{
+    background-color: var(--text-color);
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.tests-item .tests-info{
+    display: flex;
+    align-items: center;
+}
+
+.tests-item img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.tests-item .tests-name{
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--backgroundColor);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.tests-item .tests-job{
+    text-transform: capitalize;
+    color: var(--grey);
+}
+
+.tests-item p{
+    color: var(--backgroundColor);
+    margin-top: 20px;
+}
+
+.tests-item .tests-ratings{
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--warning)
+}
+
+.tests .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+    display: block;
+}

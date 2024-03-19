@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.insist-logos{
+    overflow: hidden;
+    padding: 60px 0px;
+    background: var(--text-color);
+    white-space: nowrap;
+    position: relative;
+}
+
+.insist-logos::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+
+.insist-logos-slider{
+    display: inline-block;
+    animation: slider 15s infinite linear;
+}
+
+.insist-logos-slider img{
+    height: 150px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.insist-logos:hover .insist-logos-slider{
+    animation-play-state: paused;
+}
