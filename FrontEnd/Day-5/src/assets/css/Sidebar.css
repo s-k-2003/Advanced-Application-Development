@@ -1,0 +1,113 @@
+.dash-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.dash-nav .dash-logo{
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    cursor: pointer;
+}
+
+.dash-logo .menu-icon{
+    color: var(--backgroundColor);
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.dash-logo .dash-logo-name{
+    color: var(--backgroundColor);
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.dash-nav .dash-sidebar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 1;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: var(--text-color);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+}
+
+.dash-nav.dash-open .dash-sidebar{
+    left: 0;
+
+}
+
+.dash-sidebar .dash-sidebar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    padding: 30px 16px;
+}
+
+.sidebar-list .dash-nav-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 14px 12px;
+    border-radius: 8px;
+}
+
+.dash-nav-link:hover{
+    background-color: var(--backgroundColor);
+}
+
+
+
+.dash-nav-link.active-link{
+    background-color: var(--backgroundColor);
+}
+
+.dash-nav-link.active-link .dash-icon,
+.dash-nav-link.active-link .dash-link-name{
+    color: var(--text-color);
+}
+
+.dash-nav-link:hover .dash-icon,
+.dash-nav-link:hover .dash-link-name{
+    color: var(--text-color);
+}
+
+
+
+.dash-nav-link .dash-icon{
+    margin-right: 14px;
+    font-size: 20px;
+    color: var(--backgroundColor);
+}
+
+.dash-nav-link .dash-link-name{
+    font-size: 16px;
+    color: var(--backgroundColor);
+    font-weight: 400;
+}
+
+
+
+
+/* Movie Player */
+
+
+
+
+@media (max-width: 500px){
+    .dash-nav.dash-open{
+        left: 0;
+        z-index: 1;
+    }
+}
