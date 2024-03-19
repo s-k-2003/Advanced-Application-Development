@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.enroll-body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.enroll-container{
+    background: var(--light);
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+.enroll-container .enroll-header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.enroll-container .enroll-header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 10px;
+    background-color: var(--light-warning);
+}
+
+.enroll-container .enroll-forms{
+    position: relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: transparent;
+}
+
+.enroll-form-first{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.enroll-form-first.enroll-disabled{
+    opacity: 0;
+    content-visibility: hidden;
+}
+
+
+.enroll-container .enroll-forms .enroll-details{
+    margin-top: 30px;
+
+}
+.enroll-container .enroll-forms .enroll-details .enroll-id{
+    margin-top: 10px;
+
+}
+
+.enroll-container .enroll-forms .enroll-title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: var(--text-color);
+}
+
+.enroll-container .enroll-forms .enroll-fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.enroll-forms .enroll-fields .enroll-input-field{
+    display: flex;
+    width: calc(100% /3  - 15px);
+    flex-direction: column;   
+    margin: 4px 0;
+}
+.enroll-input-field label{
+    font-size: 12px;
+    font-weight: 550;
+    color: var(--dark-grey);
+}
+.enroll-input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    padding: 0 15px ;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.enroll-input-field input:disabled{
+    cursor: not-allowed;
+}
+
+.enroll-input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.enroll-input-field input[type = "date"]{
+    color: var(--dark-grey);
+}
+
+.enroll-input-field input[type = "date"]:valid{
+    color: var(--text-color);
+}
+
+.enroll-container .enroll-forms .enroll-nextBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 80%;
+    background-color: black;
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    margin: 25px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.enroll-container .enroll-forms .enroll-nextBtn i{
+    margin: 0 6px;
+}
+
+
+.enroll-container .enroll-forms .enroll-btns{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.enroll-container .enroll-forms .enroll-SubmitBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    background-color:  var(--text-color);
+    color: var(--backgroundColor);
+    border-radius: 10px;
+    margin: 25px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin: 0 25px;
+}
+
+

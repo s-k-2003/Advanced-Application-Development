@@ -1,0 +1,40 @@
+:root{
+
+
+
+    /* Special Colors */
+    --primary : #f05537;
+    --secondary : #d1410c;
+    --mainColor: #64bcf4;
+    --main-color: #1976D2;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #ffffff;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --dark-grey: #AAAAAA;
+    --dark: #000000;
+    --dark2: #363949;
+    --warning: #Fbc02d;
+    --success: #90EE90;
+    --danger: #D32f2f;
+    --text-color: #121212;
+    --grey: #eee;
+    --max-width: 1600px;
+   
+   
+
+    /* Light Colors */
+    --light-mainColor: #CFE8FF;
+    --light: #f6f6f9;
+    --light-danger: #FEC0D3;
+    --light-success: #BBF7D0;
+    --light-warning: #FFDB5C;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+
+    --basic-color : #ff8c6b;
+    --light-basic-color : #ffe0d2;
+    --light-mainColor : #7EC8E3;
+    --danger: #D32f2f;
+    --light-danger: #FEC0D3;
+}
